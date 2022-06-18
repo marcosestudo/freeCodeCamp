@@ -22,7 +22,7 @@
         <label for="email" id="email-label">Email</label>
         <input type="email" name="email" id="email" placeholder="Enter your email" required />
         <label for="age" id="number-label">Age(optional)</label>
-        <input type="number" name="number" id="number" min="1" max="120" />
+        <input type="number" name="number" id="number" min="1" max="120" placeholder="Age" />
       </fieldset>
 
       <fieldset class="dropdown-field">
@@ -39,9 +39,9 @@
 
       <fieldset>
         <p>Would you recommend freeCodeCamp to a friend?</p>
-        <label><input type="radio" name="recommend" checked />Definitely</label>
-        <label><input type="radio" name="recommend" />Maybe</label>
-        <label><input type="radio" name="recommend" />Not sure</label>
+        <label><input type="radio" name="recommend" value="definitely" checked />Definitely</label>
+        <label><input type="radio" name="recommend" value="maybe" />Maybe</label>
+        <label><input type="radio" name="recommend" value="notSure" />Not sure</label>
       </fieldset>
 
       <fieldset class="dropdown-field">
@@ -57,17 +57,17 @@
 
       <fieldset>
         <p>What would you like to see improved? (Check all that apply)</p>
-        <label><input type="checkbox" name="toImprove" value="" />Front-end Projects</label>
-        <label><input type="checkbox" name="toImprove" value="" />Back-end Projects</label>
-        <label><input type="checkbox" name="toImprove" value="" />Data Visualization</label>
-        <label><input type="checkbox" name="toImprove" value="" />Challenges</label>
-        <label><input type="checkbox" name="toImprove" value="" />Open Source Community</label>
-        <label><input type="checkbox" name="toImprove" value="" />Gitter help rooms</label>
-        <label><input type="checkbox" name="toImprove" value="" />Videos</label>
-        <label><input type="checkbox" name="toImprove" value="" />City Meetups</label>
-        <label><input type="checkbox" name="toImprove" value="" />Wiki</label>
-        <label><input type="checkbox" name="toImprove" value="" />Forum</label>
-        <label><input type="checkbox" name="toImprove" value="" />Additional Courses</label>
+        <label><input type="checkbox" name="toImprove" value="front" />Front-end Projects</label>
+        <label><input type="checkbox" name="toImprove" value="back" />Back-end Projects</label>
+        <label><input type="checkbox" name="toImprove" value="dataVisualization" />Data Visualization</label>
+        <label><input type="checkbox" name="toImprove" value="challenges" />Challenges</label>
+        <label><input type="checkbox" name="toImprove" value="openSource" />Open Source Community</label>
+        <label><input type="checkbox" name="toImprove" value="gitterHelp" />Gitter help rooms</label>
+        <label><input type="checkbox" name="toImprove" value="videos" />Videos</label>
+        <label><input type="checkbox" name="toImprove" value="meetups" />City Meetups</label>
+        <label><input type="checkbox" name="toImprove" value="wiki" />Wiki</label>
+        <label><input type="checkbox" name="toImprove" value="forum" />Forum</label>
+        <label><input type="checkbox" name="toImprove" value="additionalCourses" />Additional Courses</label>
       </fieldset>
 
       <fieldset>
@@ -75,7 +75,7 @@
         <textarea name="soggestion" id="suggestions" cols="50" rows="5" placeholder="Enter your comment here..."></textarea>
       </fieldset>
 
-      <button type="submit">Submit</button>
+      <input type="submit" value="Submit" id="submit">
     </form>
   </section>
 </body>
