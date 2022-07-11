@@ -7,7 +7,10 @@ const stats = {
   average: 35.85
 };
 
-// Altere apenas o código abaixo desta linha
-const half = ({max, min}) => (max + min) / 2.0; 
-// Altere apenas o código acima desta linha
+const half = ({ max, min }) => (max + min) / 2.0;
+// Mesma função abaixo com notação padrão
+// function half({ max, min }) {
+//   return (max + min) / 2.0
+// };
+
 console.log(half(stats));
