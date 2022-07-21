@@ -33,3 +33,19 @@ console.log(...arr);
 
 // Usa-se indexOf para saber se o elemeneto está no array, retorna o índice do elemento
 console.log(arr.indexOf("e")); // Se não estiver, retorna -1
+
+// Removendo elemento específico do aray com indexOf e splice
+const array = ["a", "b", "c"];
+
+console.log(array);
+
+const index = array.indexOf("b");
+if (index > -1) { // only splice array when item is found
+  array.splice(index, 1); // 2nd parameter means remove one item only
+}
+
+console.log(array); 
+
+// Concatenando arrays com concat, concat retorna o array concatenado sem modifcar o original
+const concatArray = myArray.concat(arr); // < esses arrays foram declarads nas duas primeiras linhas
+console.log(concatArray);

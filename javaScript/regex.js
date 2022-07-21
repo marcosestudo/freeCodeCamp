@@ -22,3 +22,8 @@ console.log(result3);
 console.log("aaabaaba".match(/a/g));
 
 // buscar zero ou mais elementos >>> * == {0,}
+
+// Criando regex a partir de uma string recebida como input
+let str = "asd";
+let reg = new RegExp(str.split("").join("|"), "g");
+console.log(reg);
